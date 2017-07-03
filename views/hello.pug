@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+		if name
+			h2 Welkom #{name} !
+		else 
+			h2 Welkom Student !
+			form(action='/hello',method='post')
+				label Vul hier uw naam in:
+					input(type='tekst', name='username')
+				button(type='submit') Submit		
+

@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+	h2= prompt
+	if hint
+		p
+			i Hint: #{hint}
+
+	else
+		p 
+			i (Er is geen hint voor deze vraag)
+
+	section#content 
+		table
+			tr
+				th Opstelling
+				th Spelverdeling
+			each positie in posities
+				tr
+					td= positie[0]
+					td= positie[1]
+							
+		
