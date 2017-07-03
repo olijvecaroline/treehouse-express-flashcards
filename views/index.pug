@@ -2,13 +2,10 @@ extends layout.pug
 
 block content
 		section#content 
-			h2 Welkom #{name},  je kunt je hier voorbereiden op de wedstrijd!
-			form(action='/opstelling',method='get')
-				button(type='submit') Naar de opstelling!
+
+			br
 			form(action='/cards',method='get')
-				button(type='submit') Naar het team!
-			form(action='/goodbye',method='post')
-				button(type='submit') Goodbye
+				button(type='submit') Start het spel!
 
 
 

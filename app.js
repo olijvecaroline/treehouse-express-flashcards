@@ -12,16 +12,6 @@ app.use(cookieParser());
 app.set('view engine', 'pug');
 
 
-// app.use((req, res, next)=>{
-// 	console.log('This message made it');
-// 	next();
-// })
-
-// app.use((req, res, next)=>{
-// 	console.log(req.message);
-// 	next();
-// })
-
 //Import routes from routes/index.js
 const mainRoutes = require('./routes');
 const cardRoutes = require('./routes/cards');

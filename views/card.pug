@@ -6,6 +6,12 @@ block content
 			p
 				i Hint: #{hint}
 
-		else
-			p 
-				i (Er is geen hint voor deze vraag)
+		a(href=`?side=${sideToShow}`)= sideToShow
+		br
+		h3 
+			a(href="http://localhost:3000/cards") Volgende kaart
+
+		
+
+
+

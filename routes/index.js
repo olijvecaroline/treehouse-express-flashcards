@@ -25,11 +25,6 @@ router.get('/hello',(req, res)=>{
 });
 
 
-
-// router.get('/opstelling',(req, res)=>{
-// res.render('opstelling',{posities})
-//  });
-
 router.post('/hello',(req,res)=>{
 	res.cookie('username', req.body.username);
 	return res.redirect('/');
@@ -46,13 +41,5 @@ router.post('/goodbye',(req, res)=>{
 });
 
 
-// router.get('/cards', (req, res)=>{
-	
-// 	res.render('card', { prompt: 'Hoeveel spelers heeft een hockeyteam ?', hint: "Er zijn drie spitsen, drie middenvelders, twee vleugelverdedigers, een voorstopper, een laatste man en een keeper"});
-// });
-
-// router.get('/opstelling', (req,res)=>{
-// 	res.render('opstelling', {prompt: 'Namen voor de posities van de spelers in het veld:', posities})
-// });
 
 module.exports = router;

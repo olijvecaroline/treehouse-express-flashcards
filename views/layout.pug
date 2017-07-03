@@ -3,8 +3,15 @@ html(lang="en")
 	head
 		title Hockey Spel
 	body
-		form(action='/terug',method='post')
-				button(type='submit') Terug naar de startpagina
+		
 		include includes/header.pug
+
+		if name
+
+			h2 Welkom #{name},  je kunt je hier voorbereiden op de wedstrijd!
+			form(action='/goodbye',method='post')
+				button(type='submit') Tot ziens!
+
+
 		block content 
 		include includes/footer.pug
